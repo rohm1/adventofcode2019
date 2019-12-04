@@ -3,6 +3,8 @@ use std::process::exit;
 
 mod day01;
 mod day02;
+mod day03;
+mod day04;
 mod utils;
 
 fn main() {
@@ -32,6 +34,8 @@ fn main() {
     match day {
         1 => day01::run(lines),
         2 => day02::run(lines),
+        3 => day03::run(lines),
+        4 => day04::run(lines),
         _ => {
             println!("unknown day {}", day);
             exit(1);
