@@ -5,6 +5,7 @@ mod day01;
 mod day02;
 mod day03;
 mod day04;
+mod day05;
 mod utils;
 
 fn main() {
@@ -36,6 +37,7 @@ fn main() {
         2 => day02::run(lines),
         3 => day03::run(lines),
         4 => day04::run(lines),
+        5 => day05::run(lines),
         _ => {
             println!("unknown day {}", day);
             exit(1);
