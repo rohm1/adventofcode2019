@@ -2,6 +2,8 @@ use std::fs::File;
 use std::io::{BufReader, prelude::*};
 use std::process::exit;
 
+pub mod intcode;
+
 pub fn file_to_lines(file_name: &String) -> Vec<String> {
     let f = match File::open(file_name) {
         Ok(_r) => _r,
